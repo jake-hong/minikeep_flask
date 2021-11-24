@@ -1,0 +1,12 @@
+{% extends "/layout.html" %}
+
+{% block title -%}
+Index{% endblock %}
+
+{% block head -%}
+  {{super()}}
+{% endblock %}
+
+{% block body -%}
+<h1>hello! {{g.user['user_name']}}</h1>
+{% endblock %}
